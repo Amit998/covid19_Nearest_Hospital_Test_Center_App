@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TestCenterList">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="405dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:background="@drawable/gradientbackground"
+                >
+                <ImageView
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logoimg"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospital Name"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:id="@+id/tvtcName"
+                    android:textSize="21dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="275dp"
+                android:background="@color/cardview_light_background"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admited"
+                            android:textColor="#F1FF00"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:id="@+id/hpAdmited"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#F1FF00"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Beds"
+                            android:textColor="@color/startblue"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/hpBeds"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/startblue"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Availability"
+                            android:textColor="#66ff66"
+                            android:textSize="20sp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:id="@+id/hpAvailable"
+                            android:paddingTop="10dp"
+                            android:textColor="#66ff66"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20sp"
+            android:layout_width="360dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            >
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_healing_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:textColor="#66ff66"
+                    android:id="@+id/hpRecovered"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_attach_money_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:id="@+id/hpCost"
+                    android:text="1000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_email_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:id="@+id/hpMail"
+                    android:text="Damitlucky@gmail.com"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_phone_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:id="@+id/hpPhno"
+                    android:text="phno"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_location_on_black_24dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:id="@+id/hpAddress"
+                    android:text="Address"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:background="@drawable/buttongradient"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffff"
+                android:onClick="GoBackHospital"
+                android:layout_marginBottom="20dp"
+                android:text="Go Back">
+
+            </Button>
+            <Button
+                android:background="@drawable/buttongradient"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffff"
+
+                android:onClick="BookNowFromHospital"
+                android:layout_marginBottom="20dp"
+                android:text="Book Now">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|center"
+            android:background="@drawable/circle"
+            android:text="1"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Name"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_margin="10dp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/endblue"
+
+            android:text="Total Cost :2000">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="#11FF00"
+            android:text="Recovered : 20">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt_Third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/endblue"
+            android:text="Beds Available : 200">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
